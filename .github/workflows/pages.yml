@@ -1,0 +1,46 @@
+name: Publish KvittoKompis website
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: public-website-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Publish static website only
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout public website
+        uses: actions/checkout@v4
+      - name: Validate isolated website
+        shell: bash
+        run: |
+          test -f index.html
+          test -f landing.css
+          test -f .nojekyll
+          test -f assets/kvitto-kompis.svg
+          test -f assets/hantverkare.svg
+          test -f assets/dashboard-test-390.png
+          test -f assets/receipt-test-390.png
+          test -f assets/warranty-test-390.png
+          ! find . -path './.git' -prune -o -type f -print | grep -E '\.(py|env|db|sqlite|key|pem)$'
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload static website
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
