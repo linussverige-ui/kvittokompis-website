@@ -27,7 +27,7 @@ if (interestLink && interestForm?.hostname.endsWith('.sibforms.com') && privacyC
   interestLink.href = interestForm.href;
   interestLink.hidden = false;
   document.querySelector('#beta-description').textContent =
-    'Lämna din e-postadress och välj bransch om du vill. Bekräfta sedan med länken i mejlet. Vi kontaktar dig om en testplats blir aktuell.';
+    'Lämna din e-postadress och bekräfta via länken i mejlet. Vi kontaktar dig om en testplats för hantverkare blir aktuell.';
   document.querySelector('#beta-status').hidden = false;
 }
 
