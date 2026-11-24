@@ -31,9 +31,11 @@ jobs:
           test -f .nojekyll
           test -f assets/kvitto-kompis.svg
           test -f assets/hantverkare.svg
-          test -f assets/dashboard-test-390.png
-          test -f assets/receipt-test-390.png
-          test -f assets/warranty-test-390.png
+          test -f assets/hantverkare-vardag.webp
+          test -f assets/kvittokompis-social.jpg
+          test -f robots.txt
+          test -f sitemap.xml
+          test -f integritet.html
           ! find . -path './.git' -prune -o -type f -print | grep -E '\.(py|env|db|sqlite|key|pem)$'
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5

@@ -1,304 +1,199 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sv">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#0B2D4F">
-  <meta name="robots" content="noindex, nofollow">
-  <title>KvittoKompis för hantverkare – kvitton, garantier och körjournal</title>
-  <meta name="description" content="KvittoKompis för hantverkare samlar kvitton, garantier och körjournal på mobilen. Upptäck en tydligare arbetsdag i vår skyddade utvecklingsversion.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="theme-color" content="#0b2941">
+  <meta name="robots" content="index,follow">
+  <title>Kvittoapp för hantverkare | KvittoKompis</title>
+  <meta name="description" content="KvittoKompis utvecklas för hantverkare som vill samla kvitton, verktygsgarantier och körjournal direkt i mobilen. Se hur det fungerar.">
+  <link rel="canonical" href="https://kvittokompis.se/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="KvittoKompis – mindre kvittokrångel">
-  <meta property="og:description" content="Kvitton, garantier och körjournal för hantverkare – i en mobilanpassad tjänst under utveckling.">
-  <link rel="icon" type="image/svg+xml" href="./assets/kvitto-kompis.svg">
-  
-  <link rel="stylesheet" href="./landing.css">
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:site_name" content="KvittoKompis">
+  <meta property="og:url" content="https://kvittokompis.se/">
+  <meta property="og:title" content="Mindre administration. Mer tid för jobbet. | KvittoKompis">
+  <meta property="og:description" content="Kvitton, verktygsgarantier och körjournal för hantverkare, samlade i mobilen. Under utveckling.">
+  <meta property="og:image" content="https://kvittokompis.se/assets/kvittokompis-social.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="KvittoKompis för hantverkare. Mindre administration. Mer tid för jobbet.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/kvitto-kompis.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="landing.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"KvittoKompis","url":"https://kvittokompis.se/","inLanguage":"sv-SE","description":"Webbplats för KvittoKompis Hantverkare Edition, en mobil tjänst under utveckling för kvitton, verktygsgarantier och körjournal."}</script>
+  <script type="module" src="launch.js"></script>
 </head>
-<body class="landing-page">
-  <a class="landing-skip" href="#innehall">Hoppa till innehållet</a>
-  <header class="landing-header">
-    <div class="landing-container landing-header__inner">
-      <a class="landing-brand kk-brand-lockup" href="./" aria-label="KvittoKompis – startsidan">
-        <img src="./assets/kvitto-kompis.svg" width="44" height="44" alt="">
-        <span class="kk-brand-word">Kvitto<em>Kompis</em></span>
-      </a>
-      <nav class="landing-nav" aria-label="Huvudmeny">
+<body>
+  <a class="skip" href="#innehall">Hoppa till innehållet</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./" aria-label="KvittoKompis, startsida"><img src="assets/kvitto-kompis.svg" width="38" height="38" alt=""><span>Kvitto<b>Kompis</b></span></a>
+      <nav aria-label="Huvudmeny">
         <a href="#sa-funkar-det">Så fungerar det</a>
         <a href="#funktioner">Funktioner</a>
-        <a href="#for-hantverkare">För hantverkare</a>
-        <a href="#planer">Planer</a>
-        <a href="#installera">Installera</a>
+        <a href="#fragor">Vanliga frågor</a>
       </nav>
-      <details class="landing-mobile-nav">
-        <summary>Meny <span aria-hidden="true">☰</span></summary>
-        <nav aria-label="Mobilmeny">
-          <a href="#sa-funkar-det">Så fungerar det</a>
-          <a href="#funktioner">Funktioner</a>
-          <a href="#for-hantverkare">För hantverkare</a>
-          <a href="#planer">Planer</a>
-        <a href="#installera">Installera</a>
-        </nav>
-      </details>
+      <a class="button button-outline header-cta button-jump" href="#beta">Om betan</a>
     </div>
   </header>
 
   <main id="innehall">
-    <section class="landing-hero" aria-labelledby="landing-title">
-      <div class="landing-container landing-hero__grid">
-        <div class="landing-hero__copy">
-          <p class="landing-eyebrow"><span class="landing-eyebrow__dot" aria-hidden="true"></span> KvittoKompis för hantverkare</p>
-          <h1 id="landing-title">Mindre administration.<br><span>Mer tid för jobbet.</span></h1>
-          <p class="landing-lead">Samla kvitton, håll koll på verktygens garantier och registrera dina körningar – på ett ställe, direkt i mobilen. Kontrollera alltid uppgifterna innan du sparar eller exporterar.</p>
-          <div class="landing-hero__actions">
-            
-            <a class="landing-button landing-button--primary" href="#for-hantverkare">Upptäck Hantverkare Edition <span aria-hidden="true">↓</span></a>
-            
-            <a class="landing-button landing-button--secondary" href="#funktioner">Utforska funktionerna <span aria-hidden="true">↓</span></a>
-          </div>
-          <p class="landing-hero__note">Hantverkare Edition utvecklas just nu. Betan är stängd och använder syntetiska uppgifter.</p>
-          <div class="landing-hero__points" aria-label="Våra produktprinciper">
-            <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg> Mobilen först</span>
-            <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg> Fungerar utan AI</span>
-            <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg> Granskning före export</span>
-          </div>
+    <section class="hero wrap" aria-labelledby="titel">
+      <div class="hero-copy">
+        <p class="edition"><img src="assets/hantverkare.svg" width="25" height="25" alt=""> Hantverkare Edition</p>
+        <h1 id="titel">Mindre administration. <span>Mer tid för jobbet.</span></h1>
+        <p class="lead">Kvitton, garantier och körjournal. Allt på ett ställe, direkt i mobilen. KvittoKompis utvecklas för dig som hellre lägger tiden på jobbet än på pappersarbete.</p>
+        <div class="actions">
+          <a class="button button-primary button-jump" href="#beta">Bli en av de första att testa</a>
+          <a class="button button-plain button-jump" href="#sa-funkar-det">Se hur det fungerar</a>
         </div>
-        <div class="landing-showcase" aria-label="Illustrativ förhandsvisning av ett kvittoflöde">
-          <div class="landing-showcase__glow" aria-hidden="true"></div>
-          <div class="landing-preview">
-            <div class="landing-preview__bar">
-              <div class="landing-preview__brand">
-                <img src="./assets/kvitto-kompis.svg" width="30" height="30" alt="">
-                <span>KvittoKompis <small>Hantverkare</small></span>
+        <p class="status" id="launch-status">Under utveckling · Betan är ännu stängd</p>
+      </div>
+      <figure class="hero-figure">
+        <div class="hero-stage">
+          <div class="phone hero-phone">
+            <div class="phone-top"><img src="assets/kvitto-kompis.svg" width="27" height="27" alt=""><strong>KvittoKompis</strong><img src="assets/hantverkare.svg" width="24" height="24" alt=""></div>
+            <div class="phone-content">
+              <p class="sample-label">Materialinköp</p>
+              <p class="sample-title">Granska kvitto</p>
+              <div class="receipt-preview">
+                <div class="receipt-paper" aria-hidden="true"><b>LINDHAMNS BYGGVAROR</b><i></i><i></i><i></i><span>1 248,00 kr</span></div>
+                <div><strong>Lindhamns Byggvaror</strong><br>18 november 2026<br><span class="sample-muted">Originalkvitto bifogat</span></div>
               </div>
-              <img src="./assets/hantverkare.svg" width="30" height="30" alt="Hantverkare">
-            </div>
-            <div class="landing-preview__body">
-              <span class="landing-preview__overline">Din arbetsdag, samlad</span>
-              <h2>Hej! Redo för nästa kvitto?</h2>
-              <div class="landing-preview__capture">
-                <span class="landing-preview__capture-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24"><path d="M4 7h4l2-3h4l2 3h4v12H4z"/><circle cx="12" cy="13" r="3.2"/></svg>
-                </span>
-                <span><strong>Lägg till kvitto</strong><small>Foto, fil eller manuellt</small></span>
-                <span aria-hidden="true">→</span>
-              </div>
-              <div class="landing-preview__subhead"><strong>Exempel på kvitton</strong><span>Illustration</span></div>
-              <div class="landing-preview__receipt">
-                <span class="landing-preview__receipt-icon" aria-hidden="true">▤</span>
-                <span class="landing-preview__receipt-details"><strong>Materialinköp</strong><small>Exempelpost · 14 nov</small></span>
-                <span class="landing-preview__amount">1 248,00 kr</span>
-              </div>
-              <div class="landing-preview__receipt">
-                <span class="landing-preview__receipt-icon" aria-hidden="true">▤</span>
-                <span class="landing-preview__receipt-details"><strong>Drivmedel</strong><small>Exempelpost · 12 nov</small></span>
-                <span class="landing-preview__amount">620,00 kr</span>
-              </div>
-              <div class="landing-preview__review"><span aria-hidden="true">ⓘ</span><span>Kontrollera momsuppgifterna innan export.</span></div>
-              <div class="landing-preview__bottom" aria-hidden="true"><span>Hem</span><span>Kvitton</span><span>Rapporter</span></div>
+              <dl class="sample-data"><div><dt>Totalbelopp</dt><dd>1 248,00 kr</dd></div><div><dt>Moms på kvittot</dt><dd>249,60 kr</dd></div></dl>
+              <div class="sample-tags"><span>Företag</span><span>Blandat</span><span>Privat</span></div>
+              <div class="sample-action">Spara kvitto</div>
             </div>
           </div>
-          <div class="landing-floating-label"><span aria-hidden="true">✓</span><span>Du har kontrollen<br><small>AI är frivilligt</small></span></div>
-          <p class="landing-showcase__caption">Illustrativ produktvy – inte en skärmbild från den driftsatta appen.</p>
         </div>
+        <figcaption>Illustration av kvittogranskning i mobilen</figcaption>
+      </figure>
+    </section>
+
+    <section class="section workflow" id="sa-funkar-det" aria-labelledby="flode-titel">
+      <div class="wrap">
+        <div class="section-intro">
+          <h2 id="flode-titel">Från butik till färdigt underlag</h2>
+          <p>Kvittot från bygghandeln ska inte behöva ligga kvar i bilen tills det är dags att lämna underlag till redovisningen.</p>
+        </div>
+        <ol class="steps">
+          <li><h3>Fota kvittot</h3><p>Använd kameran, välj en fil eller fyll i uppgifterna själv.</p></li>
+          <li><h3>Granska uppgifterna</h3><p>Kontrollera datum, belopp och moms. Markera vilka köp som hör till företaget om kvittot är blandat.</p></li>
+          <li><h3>Samla underlaget</h3><p>Hitta inköpet igen och ta fram rapporter för din redovisningskonsult.</p></li>
+        </ol>
       </div>
     </section>
 
-    <section class="landing-trust" aria-label="Vad vi bygger för">
-      <div class="landing-container landing-trust__inner">
-        <p>För hantverkare som har viktigare saker att göra än administration</p>
-        <div><span>Kvitton</span><span aria-hidden="true">·</span><span>Garantivakten</span><span aria-hidden="true">·</span><span>Körjournal</span></div>
+    <section class="section wrap" id="funktioner" aria-labelledby="funktioner-titel">
+      <div class="section-intro">
+        <h2 id="funktioner-titel">Inköpen, verktygen och resorna</h2>
+        <p>Tre funktioner för sådant som händer mellan uppdragen.</p>
       </div>
-    </section>
-
-    <section class="landing-section" id="sa-funkar-det" aria-labelledby="landing-steps-title">
-      <div class="landing-container">
-        <div class="landing-section__intro">
-          <p class="landing-section__eyebrow">Så fungerar det</p>
-          <h2 id="landing-steps-title">Från kvitto till ordning.<br>Utan omvägar.</h2>
-          <p>Det viktigaste ska vara enkelt: få in kvittot, kontrollera uppgifterna och hitta det när det behövs.</p>
-        </div>
-        <div class="landing-steps">
-          <article class="landing-step">
-            <div class="landing-step__number">01</div>
-            <span class="landing-step__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="15" rx="2"/><path d="M8 6V4h8v2"/><circle cx="12" cy="13.5" r="3"/></svg></span>
-            <h3>Lägg till kvittot</h3>
-            <p>Ta ett foto, välj en fil eller skriv in uppgifterna själv.</p>
-          </article>
-          <article class="landing-step">
-            <div class="landing-step__number">02</div>
-            <span class="landing-step__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8m-8 4h4"/></svg></span>
-            <h3>Kontrollera detaljerna</h3>
-            <p>Granska datum, belopp och moms. Okänd moms ska inte förväxlas med 0&nbsp;%.</p>
-          </article>
-          <article class="landing-step">
-            <div class="landing-step__number">03</div>
-            <span class="landing-step__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4zM8 8h8m-8 4h8m-8 4h4"/><path d="m15 16 2 2 4-4"/></svg></span>
-            <h3>Hitta och förbered</h3>
-            <p>Samla kvitton och förbered rapporter som kan granskas tillsammans med redovisaren.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="landing-section landing-section--soft" id="funktioner" aria-labelledby="landing-features-title">
-      <div class="landing-container">
-        <div class="landing-section__intro">
-          <p class="landing-section__eyebrow">Byggd för verkliga arbetsdagar</p>
-          <h2 id="landing-features-title">Tre vardagsbehov. En KvittoKompis.</h2>
-          <p>Funktioner byggda kring inköp, verktyg och resor – med tydliga kontroller och utan krav på AI.</p>
-        </div>
-        <div class="landing-features">
-          <article class="landing-feature"><span aria-hidden="true">▤</span><h3>Kvitton på språng</h3><p>Fota, välj en fil eller registrera inköpet manuellt. Du granskar belopp och moms själv.</p></article>
-          <article class="landing-feature"><span aria-hidden="true">◇</span><h3>Garantivakten</h3><p>Samla uppgifter om verktyg och utrustning och håll koll på registrerade garantidatum.</p></article>
-          <article class="landing-feature"><span aria-hidden="true">↗</span><h3>Körjournal och milersättning</h3><p>Registrera tjänsteresor och få en samlad överblick över resor och underlag.</p></article>
-          <article class="landing-feature"><span aria-hidden="true">✓</span><h3>Tydlig momskontroll</h3><p>Kontrollera belopp och momssatser. Okänd moms ska inte förväxlas med verifierad 0 %.</p></article>
-          <article class="landing-feature"><span aria-hidden="true">⌕</span><h3>Sök och hitta tillbaka</h3><p>Hitta tidigare kvitton när du behöver underlag eller vill kontrollera ett inköp.</p></article>
-          <article class="landing-feature"><span aria-hidden="true">≋</span><h3>Rapporter för redovisningen</h3><p>PDF- och Excel-underlag testas vidare. En export betyder inte att kvittot är bokfört.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="landing-section landing-section--screens" id="bilder" aria-labelledby="landing-screens-title">
-      <div class="landing-container">
-        <div class="landing-section__intro">
-          <p class="landing-section__eyebrow">Inblick i utvecklingsversionen</p>
-          <h2 id="landing-screens-title">Se hur appen ser ut i mobilen.</h2>
-          <p>Riktiga skärmbilder från automatiserade Chromium-tester med syntetiska uppgifter. Bilderna visar testvyer, inte en driftsatt eller färdig betaversion.</p>
-        </div>
-        <div class="landing-screens">
-          <figure class="landing-screen"><img src="./assets/dashboard-test-390.png" alt="Startsidan i KvittoKompis med Lägg till kvitto, Körjournal och syntetiska utlägg" loading="lazy" decoding="async" width="390" height="1498"><figcaption>Startsida <span>· Syntetisk testmiljö</span></figcaption></figure>
-          <figure class="landing-screen"><img src="./assets/receipt-test-390.png" alt="Manuell kvittoregistrering med belopp, datum, moms och tydlig sammanfattning" loading="lazy" decoding="async" width="390" height="1160"><figcaption>Kvittoregistrering <span>· Syntetisk testmiljö</span></figcaption></figure>
-          <figure class="landing-screen"><img src="./assets/warranty-test-390.png" alt="Garantivakten med sökning och ett syntetiskt garantikort" loading="lazy" decoding="async" width="390" height="900"><figcaption>Garantivakten <span>· Syntetisk testmiljö</span></figcaption></figure>
-        </div>
-        <p class="landing-screens__note">Skärmbilderna är utsnitt från automatiserade tester av en utvecklingsgren. Funktioner och utseende kan förändras före lansering.</p>
-      </div>
-    </section>
-
-    <section class="landing-section" id="for-hantverkare" aria-labelledby="landing-focus-title">
-      <div class="landing-container">
-        <div class="landing-focus">
-          <div class="landing-focus__copy">
-            <p class="landing-section__eyebrow">Hantverkare först</p>
-            <h2 id="landing-focus-title">Byggd för din vardag ute på jobb.</h2>
-            <p>KvittoKompis Hantverkare Edition utvecklas för små bygg-, el-, VVS- och serviceföretag som vill samla arbetsdagens underlag på ett ställe.</p>
-            <p class="landing-focus__status">Begränsad utvecklingsversion · Inte öppet för riktiga kundkvitton ännu.</p>
-            <div class="landing-focus__action"><a href="#bilder">Se appen i mobilen <span aria-hidden="true">↑</span></a></div>
+      <div class="features">
+        <article class="feature">
+          <div class="feature-copy"><h3>Kvitton på språng</h3><p>Samla materialkvitton med originalet kvar. Vid blandade köp kan du ange företagsdelen och granska momsen före export.</p></div>
+          <div class="example example-green">
+            <p class="sample-label">Kvitto · Blandat köp</p>
+            <dl class="sample-data"><div><dt>Företag</dt><dd>998,00 kr</dd></div><div><dt>Privat</dt><dd>250,00 kr</dd></div><div><dt>Kvitto totalt</dt><dd>1 248,00 kr</dd></div></dl>
           </div>
-          <div class="landing-focus__uses">
-            <div class="landing-focus__brand"><img src="./assets/hantverkare.svg" width="56" height="56" alt=""><strong>Hantverkare Edition</strong></div>
-            <ul>
-              <li><strong>Material och verktyg</strong><span>Håll ordning på utlägg och kvitton.</span></li>
-              <li><strong>Garantier och utrustning</strong><span>Se registrerade garantier på ett ställe.</span></li>
-              <li><strong>Resor mellan uppdrag</strong><span>Registrera körningar och samla underlag.</span></li>
-            </ul>
+        </article>
+        <article class="feature">
+          <div class="feature-copy"><h3>Garantivakten</h3><p>Samla inköpsdatum och registrerade garantitider för verktyg och utrustning, så att du hittar dem när något går sönder.</p></div>
+          <div class="example example-warm">
+            <p class="sample-label">Garantivakten</p>
+            <p class="sample-title">Borrskruvdragare</p>
+            <dl class="sample-data"><div><dt>Inköpsdatum</dt><dd>12 maj 2026</dd></div><div><dt>Registrerad garanti till</dt><dd>12 maj 2028</dd></div></dl>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="landing-section landing-section--soft" id="planer" aria-labelledby="landing-plans-title">
-      <div class="landing-container">
-        <div class="landing-section__intro">
-          <p class="landing-section__eyebrow">Gratis och Premium</p>
-          <h2 id="landing-plans-title">Bra från start. Möjlighet att växa.</h2>
-          <p>Ambitionen är att även gratisversionen ska kännas genomarbetad. Priser, exakta funktioner och abonnemangsvillkor fastställs före lansering.</p>
-        </div>
-        <div class="landing-plans">
-          <article class="landing-plan">
-            <span class="landing-pill landing-pill--muted">Planeras</span>
-            <h3>Gratis</h3>
-            <p class="landing-plan__headline">Det viktiga först.</p>
-            <p>En pålitlig grund för att registrera och hålla ordning på kvitton utan krav på AI.</p>
-            <p class="landing-plan__note">Slutligt innehåll och eventuella begränsningar är inte beslutade.</p>
-          </article>
-          <article class="landing-plan landing-plan--featured">
-            <span class="landing-pill">Planeras</span>
-            <h3>Premium</h3>
-            <p class="landing-plan__headline">Mer när du behöver det.</p>
-            <p>Vi utreder ett betalalternativ med ytterligare hjälp i den dagliga administrationen.</p>
-            <p class="landing-plan__note">Pris och funktioner publiceras innan någon betalning kan startas.</p>
-          </article>
-        </div>
-        <p class="landing-plans__footnote">Inga abonnemang säljs från denna sida. Tjänsten är inte öppen för skarpa kundunderlag.</p>
-      </div>
-    </section>
-
-
-    <section class="landing-section landing-section--soft" id="installera" aria-labelledby="landing-install-title">
-      <div class="landing-container">
-        <div class="landing-section__intro">
-          <p class="landing-section__eyebrow">Direkt i mobilen</p>
-          <h2 id="landing-install-title">KvittoKompis nära till hands.</h2>
-          <p>Hantverkare utvecklas som en webbapp (PWA). När installation stöds av din webbläsare kan du lägga appen på hemskärmen – utan en APK-fil eller separat appbutik.</p>
-        </div>
-        <div class="landing-install">
-          <div class="landing-install-steps">
-            <article class="landing-install-card">
-              <h3>Android</h3>
-              <ol><li>Öppna Hantverkare-appen i Chrome eller Samsung Internet.</li><li>Öppna webbläsarens meny (⋮).</li><li>Välj <strong>Installera app</strong> eller <strong>Lägg till på startskärmen</strong>, om alternativet visas.</li></ol>
-            </article>
-            <article class="landing-install-card">
-              <h3>iPhone</h3>
-              <ol><li>Öppna Hantverkare-appen i Safari.</li><li>Tryck på <strong>Dela</strong>.</li><li>Välj <strong>Lägg till på hemskärmen</strong>, om alternativet finns.</li></ol>
-            </article>
+        </article>
+        <article class="feature">
+          <div class="feature-copy"><h3>Körjournal för företaget</h3><p>Registrera resor mellan uppdragen, varför du körde och hur långt. Samla körningarna i ett underlag för milersättning.</p></div>
+          <div class="example example-blue">
+            <p class="sample-label">Körjournal · Tjänsteresa</p>
+            <p class="sample-title">Bromma till Ekerö</p>
+            <dl class="sample-data"><div><dt>Ärende</dt><dd>Servicebesök</dd></div><div><dt>Sträcka</dt><dd>18 km</dd></div></dl>
           </div>
-          <aside class="landing-install-note">
-            <span class="landing-status">Förhandsversion</span>
-            <h3>Hantverkare är inte lanserad än.</h3>
-            <p>Betan är endast tillgänglig för inbjudna. Stödet för installation verifieras inför lanseringen.</p>
-            <a class="landing-button landing-button--primary" href="#bilder">Se appen i mobilen <span aria-hidden="true">↑</span></a>
-            <p class="landing-install-disclaimer">När appen öppnar för fler kan du återkomma hit för att se hur du kommer igång.</p>
-          </aside>
-        </div>
+        </article>
       </div>
+      <p class="figure-note">Illustrativa produktvyer med fiktiva uppgifter. Funktioner och utseende kan ändras före lansering.</p>
     </section>
 
-    <section class="landing-section" id="fragor" aria-labelledby="landing-faq-title">
-      <div class="landing-container landing-faq__layout">
-        <div class="landing-faq__heading">
-          <p class="landing-section__eyebrow">Vanliga frågor</p>
-          <h2 id="landing-faq-title">Bra att veta.</h2>
-          <p>Vad fungerar i testversionen, och vad behöver du kontrollera?</p>
-        </div>
-        <div class="landing-faq">
-          <details><summary>Kan jag använda KvittoKompis i mitt företag redan nu?<span aria-hidden="true">+</span></summary><p>Inte för riktiga kundkvitton än. KvittoKompis utvecklas och testas fortfarande. Den skyddade testappen är endast avsedd för syntetiska uppgifter.</p></details>
-          <details><summary>Måste jag använda AI?<span aria-hidden="true">+</span></summary><p>Nej. Du ska kunna registrera kvitton manuellt och själv kontrollera informationen. Valfri AI-hjälp är inte en förutsättning för grundflödet.</p></details>
-          <details><summary>Är momsen alltid automatiskt korrekt?<span aria-hidden="true">+</span></summary><p>Nej, ett system bör inte lova det. Momssats och underlag måste kunna kontrolleras. Okänd moms ska inte presenteras som verifierad nollmoms.</p></details>
-          <details><summary>Kan jag hålla koll på verktygens garantier?<span aria-hidden="true">+</span></summary><p>Garantivakten samlar registrerade garantidatum och uppgifter om verktyg och utrustning. Kontrollera alltid köpevillkor och garantibevis. Funktionen testas fortfarande.</p></details>
-          <details><summary>Kan jag registrera körningar och milersättning?<span aria-hidden="true">+</span></summary><p>Körjournalen har stöd för registrering och underlag. Kontrollera uppgifterna och aktuella ersättningsregler innan de används i företagets redovisning.</p></details>
-          <details><summary>Kan vem som helst skapa ett testkonto?<span aria-hidden="true">+</span></summary><p>Nej. Testmiljön är skyddad och åtkomsten kan vara begränsad. Den är inte en öppen betalansering. Använd endast påhittade testuppgifter.</p></details>
-          <details><summary>Vad kommer KvittoKompis att kosta?<span aria-hidden="true">+</span></summary><p>Vi planerar en gratisversion och ett Premium-alternativ, men har ännu inte fastställt priser eller slutligt innehåll.</p></details>
-          <details><summary>Kan jag lämna underlag till min redovisare?<span aria-hidden="true">+</span></summary><p>PDF- och Excel-underlag finns i utvecklingsarbetet och genomgår fortfarande testning. Export är ett granskningsunderlag och ersätter inte kontroll eller bokföringsansvar.</p></details>
-        </div>
-      </div>
-    </section>
-
-    <section class="landing-bottom-cta" aria-labelledby="landing-cta-title">
-      <div class="landing-container landing-bottom-cta__inner">
+    <section class="section showcase" id="underlag" aria-labelledby="underlag-titel">
+      <div class="wrap showcase-grid">
+        <figure class="report-figure">
+          <div class="example report">
+            <p class="sample-label">Rapport · November 2026</p>
+            <p class="sample-title">Underlag till redovisningen</p>
+            <dl class="sample-data"><div><dt>Kvitton i perioden</dt><dd>12</dd></div><div><dt>Inköp i företaget</dt><dd>8 420,00 kr</dd></div><div><dt>Bilagor</dt><dd>Originalkvitton</dd></div></dl>
+            <p class="report-types"><span>PDF</span><span>Excel</span></p>
+          </div>
+          <figcaption>Illustration av en rapport inför avstämning</figcaption>
+        </figure>
         <div>
-          <p class="landing-section__eyebrow">Vi bygger vidare</p>
-          <h2 id="landing-cta-title">Kvitton ska inte ta över arbetsdagen.</h2>
-          <p>Utforska utvecklingsversionen av KvittoKompis Hantverkare Edition.</p>
+          <h2 id="underlag-titel">När redovisningen behöver dina kvitton</h2>
+          <p>Ta fram underlag för en period, med originalkvitton som bilagor. PDF- och Excel-exporten testas inför lanseringen.</p>
+          <p>Du granskar belopp, moms och vilka inköp som hör till företaget. Du kan fylla i uppgifterna manuellt. Rapporten är ett underlag för bokföringen.</p>
         </div>
-        <a class="landing-button landing-button--light" href="#bilder">Se appen i mobilen <span aria-hidden="true">↑</span></a>
       </div>
     </section>
+
+    <section class="section wrap trade" aria-labelledby="vardag-titel">
+      <picture class="trade-photo">
+        <source srcset="assets/hantverkare-vardag-600.webp 600w, assets/hantverkare-vardag.webp 1100w" sizes="(min-width: 800px) 48vw, 94vw">
+        <img src="assets/hantverkare-vardag.webp" width="1100" height="733" alt="Hantverkare med mobil och kvitto vid sin arbetsbänk" loading="lazy" decoding="async">
+      </picture>
+      <div>
+        <h2 id="vardag-titel">För dig som är ute på jobb</h2>
+        <p>Du kanske köper material före första uppdraget, kör vidare till nästa kund och behöver hitta garantin på en maskin när du är tillbaka i verkstaden. KvittoKompis byggs för den vardagen, för dig som driver eget eller jobbar i ett litet hantverksföretag.</p>
+      </div>
+    </section>
+
+    <section class="section wrap faq" id="fragor" aria-labelledby="fragor-titel">
+      <div><h2 id="fragor-titel">Vanliga frågor</h2></div>
+      <div>
+        <details><summary>När kan jag börja använda KvittoKompis?</summary><p>Ett öppningsdatum är ännu inte bestämt. Tjänsten är under utveckling och behöver testas vidare innan den kan användas för skarpa kundkvitton.</p></details>
+        <details><summary>Vad gör jag om ett kvitto innehåller både företagsköp och privata köp?</summary><p>Markera företagsdelen när du granskar kvittot. Kontrollera beloppen och momsuppgifterna mot originalet innan du sparar eller exporterar.</p></details>
+        <details><summary>Måste jag använda AI för att registrera kvitton?</summary><p>Du kan fylla i uppgifterna själv. Du ansvarar för att kontrollera det som sparas, även när avläsningshjälp används.</p></details>
+        <details><summary>Vad kommer KvittoKompis att kosta?</summary><p>Priser och villkor är ännu inte beslutade.</p></details>
+        <details><summary>Vad innebär en betainbjudan?</summary><p>En betainbjudan ger möjlighet att prova en utvecklingsversion och berätta vad som fungerar i din arbetsvardag. En intresseanmälan skapar inget konto och garanterar ingen plats.</p></details>
+      </div>
+    </section>
+
+    <section class="section beta" id="beta" aria-labelledby="beta-titel">
+      <div class="wrap beta-inner">
+        <div>
+          <h2 id="beta-titel">Bli en av de första att testa</h2>
+          <p id="beta-description">Intresseanmälan öppnar när vi är redo att ta emot anmälningar. Datumet är ännu inte bestämt.</p>
+          <p class="beta-privacy" id="beta-status" hidden><a href="integritet.html#intresseanmalan">Så hanteras dina uppgifter</a></p>
+        </div>
+        <a class="button button-light" id="beta-form-link" hidden>Öppna intresseanmälan</a>
+      </div>
+    </section>
+    <div id="launch-content"></div>
   </main>
 
-  <footer class="landing-footer">
-    <div class="landing-container landing-footer__inner">
-      <div>
-        <a class="landing-brand landing-brand--footer" href="./"><img src="./assets/kvitto-kompis.svg" width="34" height="34" alt=""><span>KvittoKompis</span></a>
-        <p>Ordning på kvittona. Mer fokus på jobbet.</p>
-        <small>Utvecklingsversion. Ej avsedd för riktiga kundkvitton eller bokföring.</small>
-      </div>
-      <nav aria-label="Sidfotslänkar">
-        <a href="#sa-funkar-det">Så fungerar det</a>
-        <a href="#fragor">Vanliga frågor</a>
-        <a href="#installera">Installera</a>
-        <a href="#planer">Planer</a>
-      </nav>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a class="brand" href="./" aria-label="KvittoKompis, startsida"><img src="assets/kvitto-kompis.svg" width="35" height="35" alt=""><span>Kvitto<b>Kompis</b></span></a>
+      <nav aria-label="Sidfot"><a href="#funktioner">Funktioner</a><a href="#fragor">Vanliga frågor</a><a href="integritet.html">Integritet</a></nav>
     </div>
   </footer>
+
+  <template id="installation-template">
+    <section class="section wrap" aria-labelledby="installera">
+      <h2 id="installera">Lägg till KvittoKompis på hemskärmen</h2>
+      <p>Öppna appen i mobilens webbläsare. På Android väljer du <strong>Lägg till på startskärmen</strong> i webbläsarens meny. På iPhone använder du <strong>Dela</strong> i Safari och väljer <strong>Lägg till på hemskärmen</strong> när alternativet visas.</p>
+      <a class="button button-primary" data-app-link>Öppna KvittoKompis</a>
+    </section>
+  </template>
+  <template id="plans-template">
+    <section class="section wrap" aria-labelledby="planer">
+      <h2 id="planer">Abonnemang</h2>
+      <p>Välj bland de aktuella planerna Gratis och Premium.</p>
+      <a class="button button-primary" data-plans-link>Jämför planer och priser</a>
+    </section>
+  </template>
 </body>
 </html>
